@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <system>
+            <children>
+                <reindex translate="title" module="reindex">
+                    <title>Reindex Management</title>
+                    <action>reindex/adminhtml_reindex</action>
+                    <sort_order>93</sort_order>
+                </reindex>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <index translate="title">
+                                <title>Reindex Management</title>
+                            </index>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
